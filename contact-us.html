@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="beauty.css">
+    <meta name="description" content="To contact the Roar Bikes, call this number of drop an email here">
+</head>
+
+<body>
+    <header>
+        <div class="toplogo">
+            <a href="index.html"><img src="img/logo-roar-bikes.png" alt="Logo for Roar Bikes in Dublin"></a>
+        </div>
+
+        <div class="contacthead">
+            <h1>Roar Bikes</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Contact us</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat sint neque dolores ipsam molestiae
+            obcaecati vero eos laudantium. Sapiente, odio! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nobis aliquam quam labore hic, laborum aliquid!</p>
+
+    </div>
+
+    <section>
+        <div class="email">
+            <form action="mail.php" method="post">
+                <div class="formdetails">
+                    <label for="Name">Name</label>
+                    <input type="text" name="Name" id="Name" placeholder="You full Name">
+                </div>
+
+                <div class="formdetails">
+                    <label for="email">Your email ID</label>
+                    <input type="email" name="email" id="email" placeholder="Your email ID">
+                </div>
+
+                <textarea name="message" id="message" cols="100" rows="10"
+                    placeholder="Tell us what you think"></textarea>
+
+                <div class="formdetails"> <textarea name="dropmessage" id="dropmessage" cols="100" rows="100"
+                        placeholder="Tell us what you think"></textarea>
+                </div>
+
+                <div class="formdetails">
+                    <input type="checkbox" name="getmail" id="getmail" value="true">
+                    <label for="getmail">Get our regular updates</label>
+                </div>
+
+                <!-- why would above box work but not the one below!? -->
+
+                <div class="formdetails">
+                    <input type="checkbox" name="emailsub" id="emailsub" value="true">
+                    <label for="emailsub">Sign up for our monthly updates</label>
+
+                    <p>How would you like to be contacted</p>
+
+                    <div class="formdetails">
+
+                        <div class="contact-pref">
+                            <input type="radio" name="contact-pref" id="phone" value="phone">
+                            <label for="phone">Phone</label>
+                        </div>
+
+                        <div class="contact-pref">
+                            <input type="radio" name="contact-pref" id="email" value="mail">
+                            <label for="mail">Mail</label>
+                        </div>
+                    </div>
+
+                    <div class="formdetails">
+                        <label for="state">Where are from exactly?</label>
+                        <select name="state" id="state">
+                            <option value="not-chosen">Choose a State</option>
+                            <option value="andhra">Andhra Pradesh</option>
+                            <option value="arunachal" selected>Arunachal</option>
+                            <option value="bihar">Bihar</option>
+                        </select>
+                    </div>
+
+                    <div class="formdetails">
+                        <label for="date">When was gandhiji born?</label>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="date" name="date" id="date">
+                    </div>
+
+                    <div class="formdetails">
+                        <label for="color">What is your favorite color?</label>
+                        <input type="color" name="color" id="color">
+                    </div>
+
+                    <div class="formdetails">
+                        <input type="submit" value="Send">
+                    </div>
+
+                    
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+html {
+    height: 100%;
+
+    /* Background images are put in the CSS code as HTML only stacks elements. body below also has this tag, as that is used for backgground gradient*/
+    background-image: url(img/image-lion-background.png);
+    background-repeat: no-repeat; 
+    background-color: #fc5e55;
+}
+
+body {
+	margin:0;
+   background-image: linear-gradient(#FC5E55, #FA4083);
+   /*  background-color: #fc5e55; */
+   /* background-image: repeating-linear-gradient(red, yellow 10%, green 20%); */
+   /* background-image: radial-gradient(circle,red, yellow 10%, green 20%); */
+   /* Just before red, the first colour in the gradient, you can choose the direction of the gradient, in this case, linear. which can be done by angle like 90deg, -90deg or by specifying direction, like to eight or to left etc.*/
+
+   /* We can also add multiple colours saperated by comma. */
+   font-family: 'Roboto', sans-serif;
+   /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+   line-height: 1.75rem;
+   font-size: 1.125rem;
+   width: device;
+   color: white;
+
+   /* stop repeating the gradient in the contact us page */
+   background-repeat: repeat;
+}
+
+.container {
+   /*  min-height: 37.5rem;
+    background-color: #051828; */
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    /* background-color: rgb(76, 179, 76); */
+    /* height: 100px; */
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    display: flex;
+    /* align-items tag aligns child contents top/centre/end etc. */
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #cccccc;
+}
+
+.toplogo {
+    width: 20%;
+}
+
+nav {
+width: 35%;
+padding-right: 5%;
+z-index: 100;
+}
+
+nav a {
+text-decoration: none;
+color: white;
+font-weight: 700;
+}
+
+nav .navbar {
+    /* position: absolute; */
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-around;
+}
+
+.nutton {
+    /* position: absolute; */
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    background-color: none;
+    background: #FC5E55;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    padding-top: 12px;
+
+    /* for hover dropdown menu, we need to first define the off state of the dropdown
+    display: none;  */
+    }
+
+.nutton:hover {
+    background-color: darkolivegreen;
+    transition-duration: 600ms;
+}
+
+main {
+    /* background-color: rgb(42, 110, 42); */
+    min-height: 300px;
+    padding-top: 50px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    z-index: 0;
+}
+
+.herobox1 {
+    /*the following text means that this flex child occupies the 2/3 of the total parent area*/
+    flex: 2;
+    padding-left: 75px;
+    padding-right: 75px;
+    text-align: left;
+}
+
+.herobox2 {
+    /*the following text means that this flex child occupies the 1/3 of the total parent area*/
+    flex: 1;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.25rem;
+    line-height: 3.75rem;
+    font-weight: 700;
+    padding-bottom: 1.75rem;
+    text-shadow: 5px 5px 10px #FA4083;
+}
+
+.boxes {
+    /* background-color: rgb(42, 110, 42); */
+    /* min-height: 18.75rem; */
+    display: flex;
+    /* flex-wrap: wrap;  it distributes the content in multiple lines, instead of over each other*/
+
+    /* to justify and align boxes under the this flexbox  */
+    justify-content: space-around;
+
+}
+
+.card1 {
+    background-image: url(img/image-background-card1.jpg);
+    /* Background size of 100% shows complete image in the page, while cover tries to strech the image to fit to given fix parameter of width or height
+    background-size: 100%; */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+    width: 30.0%;
+}
+
+.card2 {
+    background-image: url(img/image-background-card2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+    width: 30.0%;
+}
+
+.card3 {
+    background-image: url(img/image-background-card3.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 350px;
+    width: 30.0%;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    /* padding-top: 15px; */
+}
+
+.boxes p {
+    /* padding: 15px 30px; It is no more needed as the padding of 50px is applied to all three cards together below*/
+    font-size: .85rem;
+    line-height: 1.2rem;
+    padding-top: 20px;
+}
+
+.card1, .card2, .card3 {
+    padding: 50px;
+
+    /* This adds padding to all the three boxes, but to make the size constant, we have to apply the following properties */
+    box-sizing: border-box;
+    transition: 1s;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    box-shadow: 0px 3px 10px #f33;
+    box-shadow: 0 10px 10px #000000DD;
+    transform: scale3d(1.02, 1.02, 1.02);
+    transition-duration: 300ms;   
+}
+
+p{
+    line-height: 1.75rem;
+    padding-bottom: 0.5rem;
+}
+
+i {
+    width: 100px;
+}
+
+.boxes a {
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+position: absolute;
+width: 200px;
+height: 50px;
+background: #FC5E55;
+border: 2px solid #FFFFFF;
+border-radius: 10px;
+text-align: center;
+font-family: 'Playfair Display', serif;
+font-weight: 600;
+text-decoration: none;
+color: white;
+padding-top: 20px;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.40);
+}
+
+/* Hover pseudo class for button */
+
+.button:hover {
+    background-color:#f33;
+    transition-duration: 400ms;
+}
+
+section h2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+section h3 {
+    padding: 15px;
+}
+
+section p:last-of-type {
+    padding-top: 1rem;
+font-style: italic;
+font-weight: 600;
+}
+
+article {
+    /* margin-top: 50px; */
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    /* position: absolute;
+    width: 1750px;
+    height: 350px;
+    left: 0px;
+    overflow-x: scroll; */
+}
+
+article .testimonials {
+/* position: absolute;  this puts all boxes over each other*/
+margin: 25px;
+width: 300px;
+height: 300px;
+background: #FC5E55;
+border-bottom: 1px solid #f33;
+border-right: 1px solid #f33;
+border-radius: 0px 0px 10px 0px;
+text-align: center;
+box-sizing: border-box;
+}
+
+.dutton {
+    /* position: relative; */
+    font-size: 1rem;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background: #FC5E55;
+    border: 1px solid #FFFFFF;
+    text-decoration: none;
+    color: white;
+    padding-top: 12px;
+}
+
+.dutton:hover {
+    background-color: darkolivegreen;
+    transition-duration: 500ms;
+}
+
+.dropdown {
+    display: none;
+    padding-top: 15px;
+}
+
+.nutton:hover .dropdown {
+    display: block;
+
+    /* z index at <nav> increases the z index of dropdown on hover too */
+    /* z-index: 100; */
+}
+
+/* Below is the styling of form given on the contact us page. */
+
+.email{
+padding-left: 150px;
+min-height: 500px;
+}
+
+
+.formdetails{
+    padding-bottom: 30px;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    align-content: center;
+}
+
+.formdetails label {
+    width: 200px;
+    padding-bottom: 30px;
+    /* This provides the text area for text field names with a constant width so that the input fields look left aligned*/
+
+    color: rgb(157, 253, 2);
+}
+
+input {
+    height: 30px;
+    width: 400px;
+    background-color: #FC5555;
+    color: white;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    font-size: 15px;
+    color: aliceblue;
+
+    /* to select the parameter for which you want to specify the properties, put them in square brackets */
+}
+
+    ::placeholder {
+        color: rgb(22, 184, 57);
+         /* opacity: 1;Firefox */
+      }
+
+      input[type=radio]
+      {
+        height: 20px;
+        width: 50px;
+      }
+
+   select.option {
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    color: tomato;
+}
+
+input[type=submit] {
+    width: 150px;
+    height: 40px;
+    box-shadow: none;
+}
